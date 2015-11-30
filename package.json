@@ -1,0 +1,16 @@
+{
+    "name": "promise-util",
+    "version": "1.0.0",
+    "description": "Pear Deck promise utility functions",
+    "main": "lib/index.js",
+    "scripts": {
+        "compile": "babel -d lib/ src/",
+        "postinstall": "npm run compile"
+    },
+    "dependencies": {
+        "babel": "^4.6.0",
+        "core-js": "^0.6.0"
+    },
+    "author": "",
+    "license": "ISC"
+}
