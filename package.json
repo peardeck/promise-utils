@@ -1,5 +1,5 @@
 {
-    "name": "promise-util",
+    "name": "promise-utils",
     "version": "1.0.0",
     "description": "Pear Deck promise utility functions",
     "main": "lib/index.js",
