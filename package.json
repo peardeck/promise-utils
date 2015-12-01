@@ -1,28 +1,38 @@
 {
-    "name": "promise-utils",
-    "version": "1.0.0",
-    "description": "Pear Deck promise utility functions",
-    "main": "lib/index.js",
-    "scripts": {
-        "compile": "babel -d lib/ src/",
-        "postinstall": "npm run compile",
-        "test": "jest"
-    },
-    "jest": {
-        "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-        "testFileExtensions": ["es6", "js"],
-        "moduleFileExtensions": ["js", "json", "es6"],
-        "testPathDirs": ["<rootDir>/src"]
-    },
-    "dependencies": {
-        "babel": "^4.6.0",
-        "core-js": "^0.6.0"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "babel-jest": "^6.0.1",
-        "babel-preset-es2015": "^6.1.18",
-        "jest-cli": "^0.8.0"
-    }
+  "name": "promise-utils",
+  "version": "1.0.0",
+  "description": "Pear Deck promise utility functions",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "postinstall": "npm run compile",
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "testPathDirs": [
+      "<rootDir>/src"
+    ]
+  },
+  "dependencies": {
+    "babel": "6.1.18",
+    "babel-cli": "6.2.0",
+    "core-js": "0.6.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "6.0.1",
+    "babel-preset-es2015": "6.1.18",
+    "jest-cli": "0.8.0"
+  }
 }
