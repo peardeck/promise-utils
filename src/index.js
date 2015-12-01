@@ -27,3 +27,18 @@ export function nodeify(promise, nodeyCallback) {
         (error) => nodeyCallback(error, null)
     );
 }
+
+export function promiseHash(hash) {
+    const keys = Object.keys(hash);
+    const values = keys.map((key) => hash[key]);
+    
+    return Promise.all(values)
+    .then((resolvedValues) => {
+        const resolvedHash = {};
+        for (let i = 0; i < keys.length; i++) {
+            resolvedHash[keys[i]] = resolvedValues[i];
+        }
+        
+        return resolvedHash;
+    });
+}

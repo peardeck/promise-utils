@@ -11,7 +11,8 @@
     "jest": {
         "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
         "testFileExtensions": ["es6", "js"],
-        "moduleFileExtensions": ["js", "json", "es6"]
+        "moduleFileExtensions": ["js", "json", "es6"],
+        "testPathDirs": ["<rootDir>/src"]
     },
     "dependencies": {
         "babel": "^4.6.0",
